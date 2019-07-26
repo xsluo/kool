@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A156F2222EAEF6800824A47 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A156F2122EAEF6800824A47 /* setting.png */; };
+		9A18A14222E9941F008EE1FF /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A18A14122E9941F008EE1FF /* background2.png */; };
+		9A195B6622EAFDE700209E81 /* background5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A195B6522EAFDE700209E81 /* background5.png */; };
 		9A549DAB22E8557700EABCB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A549DAA22E8557700EABCB5 /* main.m */; };
 		9A549DAE22E8557700EABCB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A549DAD22E8557700EABCB5 /* AppDelegate.m */; };
 		9A549DB122E8557700EABCB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A549DB022E8557700EABCB5 /* ViewController.m */; };
 		9A549DB422E8557700EABCB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DB222E8557700EABCB5 /* Main.storyboard */; };
 		9A549DB622E8557700EABCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DB522E8557700EABCB5 /* Assets.xcassets */; };
 		9A549DB922E8557700EABCB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DB722E8557700EABCB5 /* LaunchScreen.storyboard */; };
+		9A549DC822E8562A00EABCB5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DC122E8562A00EABCB5 /* back.png */; };
+		9A549DC922E8562A00EABCB5 /* celsius.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DC222E8562A00EABCB5 /* celsius.png */; };
+		9A549DCA22E8562A00EABCB5 /* eco.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DC322E8562A00EABCB5 /* eco.png */; };
+		9A549DCB22E8562A00EABCB5 /* enter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DC422E8562A00EABCB5 /* enter.jpg */; };
+		9A549DCC22E8562A00EABCB5 /* enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DC522E8562A00EABCB5 /* enter.png */; };
+		9A549DCD22E8562A00EABCB5 /* FRIDGE1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DC622E8562A00EABCB5 /* FRIDGE1.png */; };
+		9A549DCE22E8562A00EABCB5 /* FRIDGE2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DC722E8562A00EABCB5 /* FRIDGE2.png */; };
+		9A549DD422E8564B00EABCB5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DCF22E8564B00EABCB5 /* logo.png */; };
+		9A549DD522E8564B00EABCB5 /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD022E8564B00EABCB5 /* off.png */; };
+		9A549DD622E8564B00EABCB5 /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD122E8564B00EABCB5 /* on.png */; };
+		9A549DD722E8564B00EABCB5 /* SETTINGS.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD222E8564B00EABCB5 /* SETTINGS.png */; };
+		9A549DD822E8564B00EABCB5 /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD322E8564B00EABCB5 /* wifi.png */; };
+		9A549DDA22E856E100EABCB5 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD922E856E100EABCB5 /* background.png */; };
+		9A6D056322E93C3400E748F7 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D056222E93C3400E748F7 /* background1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A156F2122EAEF6800824A47 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		9A18A14122E9941F008EE1FF /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		9A195B6522EAFDE700209E81 /* background5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background5.png; sourceTree = "<group>"; };
 		9A549DA622E8557700EABCB5 /* evaKool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evaKool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A549DAA22E8557700EABCB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A549DAC22E8557700EABCB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +46,20 @@
 		9A549DB522E8557700EABCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A549DB822E8557700EABCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A549DBA22E8557700EABCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A549DC122E8562A00EABCB5 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		9A549DC222E8562A00EABCB5 /* celsius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = celsius.png; sourceTree = "<group>"; };
+		9A549DC322E8562A00EABCB5 /* eco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eco.png; sourceTree = "<group>"; };
+		9A549DC422E8562A00EABCB5 /* enter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = enter.jpg; sourceTree = "<group>"; };
+		9A549DC522E8562A00EABCB5 /* enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter.png; sourceTree = "<group>"; };
+		9A549DC622E8562A00EABCB5 /* FRIDGE1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRIDGE1.png; sourceTree = "<group>"; };
+		9A549DC722E8562A00EABCB5 /* FRIDGE2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRIDGE2.png; sourceTree = "<group>"; };
+		9A549DCF22E8564B00EABCB5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9A549DD022E8564B00EABCB5 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		9A549DD122E8564B00EABCB5 /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		9A549DD222E8564B00EABCB5 /* SETTINGS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SETTINGS.png; sourceTree = "<group>"; };
+		9A549DD322E8564B00EABCB5 /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi.png; sourceTree = "<group>"; };
+		9A549DD922E856E100EABCB5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		9A6D056222E93C3400E748F7 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +76,7 @@
 		9A549D9D22E8557700EABCB5 = {
 			isa = PBXGroup;
 			children = (
+				9A549DC022E855F600EABCB5 /* Images */,
 				9A549DA822E8557700EABCB5 /* evaKool */,
 				9A549DA722E8557700EABCB5 /* Products */,
 			);
@@ -79,6 +114,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A549DC022E855F600EABCB5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9A195B6522EAFDE700209E81 /* background5.png */,
+				9A156F2122EAEF6800824A47 /* setting.png */,
+				9A18A14122E9941F008EE1FF /* background2.png */,
+				9A6D056222E93C3400E748F7 /* background1.png */,
+				9A549DD922E856E100EABCB5 /* background.png */,
+				9A549DCF22E8564B00EABCB5 /* logo.png */,
+				9A549DD022E8564B00EABCB5 /* off.png */,
+				9A549DD122E8564B00EABCB5 /* on.png */,
+				9A549DD222E8564B00EABCB5 /* SETTINGS.png */,
+				9A549DD322E8564B00EABCB5 /* wifi.png */,
+				9A549DC122E8562A00EABCB5 /* back.png */,
+				9A549DC222E8562A00EABCB5 /* celsius.png */,
+				9A549DC322E8562A00EABCB5 /* eco.png */,
+				9A549DC422E8562A00EABCB5 /* enter.jpg */,
+				9A549DC522E8562A00EABCB5 /* enter.png */,
+				9A549DC622E8562A00EABCB5 /* FRIDGE1.png */,
+				9A549DC722E8562A00EABCB5 /* FRIDGE2.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +169,7 @@
 				TargetAttributes = {
 					9A549DA522E8557700EABCB5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KVC8NZTYE2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,9 +197,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A549DD622E8564B00EABCB5 /* on.png in Resources */,
+				9A549DDA22E856E100EABCB5 /* background.png in Resources */,
+				9A549DC822E8562A00EABCB5 /* back.png in Resources */,
+				9A549DD722E8564B00EABCB5 /* SETTINGS.png in Resources */,
+				9A549DCD22E8562A00EABCB5 /* FRIDGE1.png in Resources */,
+				9A549DD422E8564B00EABCB5 /* logo.png in Resources */,
 				9A549DB922E8557700EABCB5 /* LaunchScreen.storyboard in Resources */,
+				9A549DCE22E8562A00EABCB5 /* FRIDGE2.png in Resources */,
+				9A549DCC22E8562A00EABCB5 /* enter.png in Resources */,
 				9A549DB622E8557700EABCB5 /* Assets.xcassets in Resources */,
+				9A18A14222E9941F008EE1FF /* background2.png in Resources */,
+				9A549DCA22E8562A00EABCB5 /* eco.png in Resources */,
+				9A6D056322E93C3400E748F7 /* background1.png in Resources */,
 				9A549DB422E8557700EABCB5 /* Main.storyboard in Resources */,
+				9A156F2222EAEF6800824A47 /* setting.png in Resources */,
+				9A549DD822E8564B00EABCB5 /* wifi.png in Resources */,
+				9A549DD522E8564B00EABCB5 /* off.png in Resources */,
+				9A549DC922E8562A00EABCB5 /* celsius.png in Resources */,
+				9A549DCB22E8562A00EABCB5 /* enter.jpg in Resources */,
+				9A195B6622EAFDE700209E81 /* background5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KVC8NZTYE2;
 				INFOPLIST_FILE = evaKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.www.evaKool;
@@ -283,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KVC8NZTYE2;
 				INFOPLIST_FILE = evaKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.www.evaKool;
@@ -309,6 +388,7 @@
 				9A549DBF22E8557700EABCB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
