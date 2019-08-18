@@ -26,12 +26,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-ln-mNR">
                                 <rect key="frame" x="20" y="20" width="374" height="716"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-Dq-FiI">
-                                <rect key="frame" x="132" y="682" width="150" height="49"/>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-Dq-FiI">
+                                <rect key="frame" x="132" y="681" width="150" height="51"/>
                                 <state key="normal" title="Button" image="enter.png"/>
+                                <connections>
+                                    <action selector="Connectwifi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TiQ-Kb-0PC"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6rG-o6-gLC">
-                                <rect key="frame" x="114" y="94" width="186" height="144"/>
+                                <rect key="frame" x="114" y="94" width="187" height="144"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,10 +54,14 @@
                             <constraint firstItem="MYh-ln-mNR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sn2-sS-tLJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="w4T-5k-zMk" kind="show" identifier="showSingle" id="I72-VS-fFG"/>
+                        <segue destination="1xx-3U-aYq" kind="show" identifier="showDouble" id="Ldf-rc-TRE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-135" y="-130"/>
+            <point key="canvasLocation" x="-939" y="-132"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qcA-pE-col">
@@ -68,8 +75,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-fZ-Au2">
-                                <rect key="frame" x="20" y="20" width="374" height="716"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-fZ-Au2">
+                                <rect key="frame" x="-74" y="20" width="374" height="716"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbK-fw-Kmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-95"/>
+            <point key="canvasLocation" x="703" y="688"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Lk-FC-Ai5">
@@ -166,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVF-5y-0HM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1323" y="-227"/>
+            <point key="canvasLocation" x="139" y="-1033"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MqV-hU-HO1">
@@ -184,7 +191,7 @@
                                 <rect key="frame" x="20" y="20" width="374" height="716"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="apU-s6-ruW">
-                                <rect key="frame" x="114" y="75" width="186" height="107"/>
+                                <rect key="frame" x="114" y="75" width="187" height="107"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lo-lc-e3G">
                                 <rect key="frame" x="20" y="192" width="131" height="58"/>
@@ -195,7 +202,7 @@
                                 <state key="normal" title="Button" image="setting.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg5-0Z-UEp">
-                                <rect key="frame" x="254" y="367" width="113" height="49"/>
+                                <rect key="frame" x="254" y="366" width="113" height="51"/>
                                 <state key="normal" title="Button" image="celsius.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-6B-lsA">
@@ -203,11 +210,11 @@
                                 <state key="normal" title="Button" image="eco.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-on-27e">
-                                <rect key="frame" x="58" y="567" width="132" height="43"/>
+                                <rect key="frame" x="59" y="567" width="130" height="43"/>
                                 <state key="normal" title="Button" image="on.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOA-F0-cDa">
-                                <rect key="frame" x="224" y="567" width="132" height="43"/>
+                                <rect key="frame" x="225" y="567" width="130" height="43"/>
                                 <state key="normal" title="Button" image="off.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drd-n2-f1W">
@@ -371,7 +378,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </objects>
-            <point key="canvasLocation" x="2078" y="-206"/>
+            <point key="canvasLocation" x="1129" y="-163"/>
         </scene>
     </scenes>
     <resources>

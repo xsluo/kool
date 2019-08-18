@@ -1,15 +1,15 @@
 //
 //  ViewController.h
-//  evaKool
+//  demoSocket
 //
-//  Created by Sierra on 2019/7/24.
-//  Copyright © 2019年 baidu. All rights reserved.
+//  Created by 罗 显松 on 2017/6/24.
+//  Copyright © 2017年 neusoft. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "Socket.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<SocketDelegate>
 
 @end
 

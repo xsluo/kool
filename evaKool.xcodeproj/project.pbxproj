@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09B95EFDC70953E3F9BED87D /* libPods-evaKool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D24F9D676C046CD120D08 /* libPods-evaKool.a */; };
+		45F12B8C22FB0BB200191F5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F12B8B22FB0BB200191F5D /* ViewController.m */; };
 		9A156F2222EAEF6800824A47 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A156F2122EAEF6800824A47 /* setting.png */; };
 		9A18A14222E9941F008EE1FF /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A18A14122E9941F008EE1FF /* background2.png */; };
 		9A195B6622EAFDE700209E81 /* background5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A195B6522EAFDE700209E81 /* background5.png */; };
+		9A195B6E22EB321C00209E81 /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A195B6822EB321C00209E81 /* crc.c */; };
+		9A195B6F22EB321C00209E81 /* DataToBeRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A195B6B22EB321C00209E81 /* DataToBeRead.m */; };
+		9A195B7022EB321C00209E81 /* DataToBeWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A195B6D22EB321C00209E81 /* DataToBeWrite.m */; };
+		9A195B7322EB323700209E81 /* Socket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A195B7222EB323700209E81 /* Socket.m */; };
+		9A23AAF722FAFDE9002CB5A9 /* SingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A23AAF622FAFDE9002CB5A9 /* SingleViewController.m */; };
+		9A23AAFA22FAFE0F002CB5A9 /* DoubleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A23AAF922FAFE0F002CB5A9 /* DoubleViewController.m */; };
 		9A549DAB22E8557700EABCB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A549DAA22E8557700EABCB5 /* main.m */; };
 		9A549DAE22E8557700EABCB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A549DAD22E8557700EABCB5 /* AppDelegate.m */; };
-		9A549DB122E8557700EABCB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A549DB022E8557700EABCB5 /* ViewController.m */; };
 		9A549DB422E8557700EABCB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DB222E8557700EABCB5 /* Main.storyboard */; };
 		9A549DB622E8557700EABCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DB522E8557700EABCB5 /* Assets.xcassets */; };
 		9A549DB922E8557700EABCB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DB722E8557700EABCB5 /* LaunchScreen.storyboard */; };
@@ -33,15 +40,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E16BDEAC350844DC3531177 /* Pods-evaKool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evaKool.debug.xcconfig"; path = "Target Support Files/Pods-evaKool/Pods-evaKool.debug.xcconfig"; sourceTree = "<group>"; };
+		45F12B8A22FB0BB200191F5D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		45F12B8B22FB0BB200191F5D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		684E220EF1ACB26F5C4B7A0B /* Pods-evaKool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evaKool.release.xcconfig"; path = "Target Support Files/Pods-evaKool/Pods-evaKool.release.xcconfig"; sourceTree = "<group>"; };
 		9A156F2122EAEF6800824A47 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		9A18A14122E9941F008EE1FF /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		9A195B6522EAFDE700209E81 /* background5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background5.png; sourceTree = "<group>"; };
+		9A195B6822EB321C00209E81 /* crc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc.c; sourceTree = "<group>"; };
+		9A195B6922EB321C00209E81 /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc.h; sourceTree = "<group>"; };
+		9A195B6A22EB321C00209E81 /* DataToBeRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataToBeRead.h; sourceTree = "<group>"; };
+		9A195B6B22EB321C00209E81 /* DataToBeRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataToBeRead.m; sourceTree = "<group>"; };
+		9A195B6C22EB321C00209E81 /* DataToBeWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataToBeWrite.h; sourceTree = "<group>"; };
+		9A195B6D22EB321C00209E81 /* DataToBeWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataToBeWrite.m; sourceTree = "<group>"; };
+		9A195B7122EB323700209E81 /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Socket.h; sourceTree = "<group>"; };
+		9A195B7222EB323700209E81 /* Socket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Socket.m; sourceTree = "<group>"; };
+		9A23AAF522FAFDE9002CB5A9 /* SingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewController.h; sourceTree = "<group>"; };
+		9A23AAF622FAFDE9002CB5A9 /* SingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewController.m; sourceTree = "<group>"; };
+		9A23AAF822FAFE0F002CB5A9 /* DoubleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleViewController.h; sourceTree = "<group>"; };
+		9A23AAF922FAFE0F002CB5A9 /* DoubleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleViewController.m; sourceTree = "<group>"; };
 		9A549DA622E8557700EABCB5 /* evaKool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evaKool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A549DAA22E8557700EABCB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A549DAC22E8557700EABCB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A549DAD22E8557700EABCB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9A549DAF22E8557700EABCB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9A549DB022E8557700EABCB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A549DB322E8557700EABCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A549DB522E8557700EABCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A549DB822E8557700EABCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +81,7 @@
 		9A549DD322E8564B00EABCB5 /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi.png; sourceTree = "<group>"; };
 		9A549DD922E856E100EABCB5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		9A6D056222E93C3400E748F7 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
+		A04D24F9D676C046CD120D08 /* libPods-evaKool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-evaKool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,18 +89,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B95EFDC70953E3F9BED87D /* libPods-evaKool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42A6245435125E55AD89C763 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04D24F9D676C046CD120D08 /* libPods-evaKool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56645DBECFC8ABBCC65F9514 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E16BDEAC350844DC3531177 /* Pods-evaKool.debug.xcconfig */,
+				684E220EF1ACB26F5C4B7A0B /* Pods-evaKool.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A195B6722EB318D00209E81 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				9A195B7122EB323700209E81 /* Socket.h */,
+				9A195B7222EB323700209E81 /* Socket.m */,
+				9A195B6922EB321C00209E81 /* crc.h */,
+				9A195B6822EB321C00209E81 /* crc.c */,
+				9A195B6A22EB321C00209E81 /* DataToBeRead.h */,
+				9A195B6B22EB321C00209E81 /* DataToBeRead.m */,
+				9A195B6C22EB321C00209E81 /* DataToBeWrite.h */,
+				9A195B6D22EB321C00209E81 /* DataToBeWrite.m */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
 		9A549D9D22E8557700EABCB5 = {
 			isa = PBXGroup;
 			children = (
-				9A549DC022E855F600EABCB5 /* Images */,
+				9A195B6722EB318D00209E81 /* Socket */,
 				9A549DA822E8557700EABCB5 /* evaKool */,
+				9A549DC022E855F600EABCB5 /* Images */,
 				9A549DA722E8557700EABCB5 /* Products */,
+				56645DBECFC8ABBCC65F9514 /* Pods */,
+				42A6245435125E55AD89C763 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,10 +151,14 @@
 		9A549DA822E8557700EABCB5 /* evaKool */ = {
 			isa = PBXGroup;
 			children = (
+				45F12B8A22FB0BB200191F5D /* ViewController.h */,
+				45F12B8B22FB0BB200191F5D /* ViewController.m */,
+				9A23AAF522FAFDE9002CB5A9 /* SingleViewController.h */,
+				9A23AAF622FAFDE9002CB5A9 /* SingleViewController.m */,
+				9A23AAF822FAFE0F002CB5A9 /* DoubleViewController.h */,
+				9A23AAF922FAFE0F002CB5A9 /* DoubleViewController.m */,
 				9A549DAC22E8557700EABCB5 /* AppDelegate.h */,
 				9A549DAD22E8557700EABCB5 /* AppDelegate.m */,
-				9A549DAF22E8557700EABCB5 /* ViewController.h */,
-				9A549DB022E8557700EABCB5 /* ViewController.m */,
 				9A549DB222E8557700EABCB5 /* Main.storyboard */,
 				9A549DB522E8557700EABCB5 /* Assets.xcassets */,
 				9A549DB722E8557700EABCB5 /* LaunchScreen.storyboard */,
@@ -145,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A549DBD22E8557700EABCB5 /* Build configuration list for PBXNativeTarget "evaKool" */;
 			buildPhases = (
+				434A763B118EBDFEAA7A12AC /* [CP] Check Pods Manifest.lock */,
 				9A549DA222E8557700EABCB5 /* Sources */,
 				9A549DA322E8557700EABCB5 /* Frameworks */,
 				9A549DA422E8557700EABCB5 /* Resources */,
+				155D7B8BFCED14DCF739EA12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,14 +286,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		155D7B8BFCED14DCF739EA12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-evaKool/Pods-evaKool-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-evaKool/Pods-evaKool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		434A763B118EBDFEAA7A12AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evaKool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A549DA222E8557700EABCB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A549DB122E8557700EABCB5 /* ViewController.m in Sources */,
+				45F12B8C22FB0BB200191F5D /* ViewController.m in Sources */,
+				9A23AAFA22FAFE0F002CB5A9 /* DoubleViewController.m in Sources */,
+				9A23AAF722FAFDE9002CB5A9 /* SingleViewController.m in Sources */,
 				9A549DAE22E8557700EABCB5 /* AppDelegate.m in Sources */,
+				9A195B7322EB323700209E81 /* Socket.m in Sources */,
+				9A195B6E22EB321C00209E81 /* crc.c in Sources */,
 				9A549DAB22E8557700EABCB5 /* main.m in Sources */,
+				9A195B6F22EB321C00209E81 /* DataToBeRead.m in Sources */,
+				9A195B7022EB321C00209E81 /* DataToBeWrite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +456,7 @@
 		};
 		9A549DBE22E8557700EABCB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E16BDEAC350844DC3531177 /* Pods-evaKool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KVC8NZTYE2;
@@ -359,6 +469,7 @@
 		};
 		9A549DBF22E8557700EABCB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684E220EF1ACB26F5C4B7A0B /* Pods-evaKool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KVC8NZTYE2;
