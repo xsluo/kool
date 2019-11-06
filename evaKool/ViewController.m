@@ -28,6 +28,8 @@
     self.header = [Socket sharedInstance];
     self.header.delegate = self;
     [self.header initDevice];
+    //初始化读写缓冲
+    //[self.header initBuff];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,12 +45,7 @@
 -(void)onConnected{
     [SVProgressHUD dismiss];
     //初始化数据
-    /*
-    Byte value[10] = {0xaa,0x02,0x00,0x00,0x00,0x00,0x00,0xf9,0x01,0x55};
-    //aa 02 00 00 00 00 00 f9 01 55
-    NSData *dataStream = [NSData dataWithBytes:value length:10];
-    [self.header.socket writeData:dataStream withTimeout:1 tag:0];
-     */
+    [self.header initData];
 }
 
 -(void)onConnectFailed{
@@ -61,9 +58,9 @@
     [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Yes", nil)  style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
         NSURL *url = [NSURL URLWithString:@"App-Prefs:root=WIFI"];
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
-            [[UIApplication sharedApplication] openURL:url];
+            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
         } else {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{} completionHandler:nil];
         }
     }]];
     //弹出提示框
@@ -71,7 +68,14 @@
 }
 
 -(void)OnDidReadData{
-    [self performSegueWithIdentifier:@"showtemp" sender:self];
+    NSLog(@"read data successful!----entrance");
+    if(self.header.dataRead.type == 0x00){
+         [self performSegueWithIdentifier:@"showSingle" sender:self]; //单冷冰箱
+    }else if(self.header.dataRead.type == 0x01){
+         [self performSegueWithIdentifier:@"showDouble" sender:self]; //冷热冰箱
+    }else{
+         [self performSegueWithIdentifier:@"showDouble" sender:self]; //双冷冰箱？
+    }
 }
 
 @end

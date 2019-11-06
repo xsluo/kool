@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Systemconfiguration/CaptiveNetwork.h>
 
 @interface SingleViewController : UIViewController
 

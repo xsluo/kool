@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09B95EFDC70953E3F9BED87D /* libPods-evaKool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D24F9D676C046CD120D08 /* libPods-evaKool.a */; };
+		45BDF7E2230B85820081E7C5 /* ondown.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BDF7E0230B85820081E7C5 /* ondown.png */; };
+		45BDF7E3230B85820081E7C5 /* onup.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BDF7E1230B85820081E7C5 /* onup.png */; };
 		45F12B8C22FB0BB200191F5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F12B8B22FB0BB200191F5D /* ViewController.m */; };
 		9A156F2222EAEF6800824A47 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A156F2122EAEF6800824A47 /* setting.png */; };
 		9A18A14222E9941F008EE1FF /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A18A14122E9941F008EE1FF /* background2.png */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		2E16BDEAC350844DC3531177 /* Pods-evaKool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evaKool.debug.xcconfig"; path = "Target Support Files/Pods-evaKool/Pods-evaKool.debug.xcconfig"; sourceTree = "<group>"; };
+		45BDF7E0230B85820081E7C5 /* ondown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ondown.png; sourceTree = "<group>"; };
+		45BDF7E1230B85820081E7C5 /* onup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onup.png; sourceTree = "<group>"; };
 		45F12B8A22FB0BB200191F5D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		45F12B8B22FB0BB200191F5D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		684E220EF1ACB26F5C4B7A0B /* Pods-evaKool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evaKool.release.xcconfig"; path = "Target Support Files/Pods-evaKool/Pods-evaKool.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 		9A549DC022E855F600EABCB5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				45BDF7E0230B85820081E7C5 /* ondown.png */,
+				45BDF7E1230B85820081E7C5 /* onup.png */,
 				9A195B6522EAFDE700209E81 /* background5.png */,
 				9A156F2122EAEF6800824A47 /* setting.png */,
 				9A18A14122E9941F008EE1FF /* background2.png */,
@@ -266,6 +272,8 @@
 				9A549DC822E8562A00EABCB5 /* back.png in Resources */,
 				9A549DD722E8564B00EABCB5 /* SETTINGS.png in Resources */,
 				9A549DCD22E8562A00EABCB5 /* FRIDGE1.png in Resources */,
+				45BDF7E3230B85820081E7C5 /* onup.png in Resources */,
+				45BDF7E2230B85820081E7C5 /* ondown.png in Resources */,
 				9A549DD422E8564B00EABCB5 /* logo.png in Resources */,
 				9A549DB922E8557700EABCB5 /* LaunchScreen.storyboard in Resources */,
 				9A549DCE22E8562A00EABCB5 /* FRIDGE2.png in Resources */,

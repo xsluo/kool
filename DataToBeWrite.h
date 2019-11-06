@@ -26,11 +26,10 @@
 */
 
 @interface DataToBeWrite : NSObject
-@property Byte start;   //0.0xAA 通讯开始
+@property Byte start;     //0.0xAA 通讯开始
 @property Byte command;   //1.0x?? 8种指令a
-@property Byte data;   //2.0x?? 数值b
-@property Byte crcH;     //3.0x?? CRC校验高8位
-@property Byte crcL;     //4.0x?? CRC校验低8位
-@property Byte end;      //5.0x55 通讯结束
-
+@property Byte data;      //2.0x?? 数值b
+@property Byte crcH;      //3.0x?? CRC校验高8位
+@property Byte crcL;      //4.0x?? CRC校验低8位
+@property Byte end;       //5.0x55 通讯结束
 @end
