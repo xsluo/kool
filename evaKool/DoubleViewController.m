@@ -57,6 +57,12 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+      self.header.delegate = self;
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -108,6 +114,8 @@
 -(void)onConnectBreak{
       NSLog(@"connect break!");
 }
+
+
 
 -(void)onConnectFailed{
     self.header.socket.userData = [NSNumber numberWithInt:SocketOfflineByServer];

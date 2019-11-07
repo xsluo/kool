@@ -39,6 +39,7 @@
 		9A549DD822E8564B00EABCB5 /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD322E8564B00EABCB5 /* wifi.png */; };
 		9A549DDA22E856E100EABCB5 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD922E856E100EABCB5 /* background.png */; };
 		9A6D056322E93C3400E748F7 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D056222E93C3400E748F7 /* background1.png */; };
+		CECCC3212372522700741C10 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCC3202372522700741C10 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,8 @@
 		9A549DD922E856E100EABCB5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		9A6D056222E93C3400E748F7 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
 		A04D24F9D676C046CD120D08 /* libPods-evaKool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-evaKool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECCC31F2372522700741C10 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		CECCC3202372522700741C10 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				9A549DAC22E8557700EABCB5 /* AppDelegate.h */,
 				9A549DAD22E8557700EABCB5 /* AppDelegate.m */,
 				9A549DB222E8557700EABCB5 /* Main.storyboard */,
+				CECCC31F2372522700741C10 /* SettingViewController.h */,
+				CECCC3202372522700741C10 /* SettingViewController.m */,
 				9A549DB522E8557700EABCB5 /* Assets.xcassets */,
 				9A549DB722E8557700EABCB5 /* LaunchScreen.storyboard */,
 				9A549DBA22E8557700EABCB5 /* Info.plist */,
@@ -347,6 +352,7 @@
 				9A549DAB22E8557700EABCB5 /* main.m in Sources */,
 				9A195B6F22EB321C00209E81 /* DataToBeRead.m in Sources */,
 				9A195B7022EB321C00209E81 /* DataToBeWrite.m in Sources */,
+				CECCC3212372522700741C10 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +476,7 @@
 				DEVELOPMENT_TEAM = KVC8NZTYE2;
 				INFOPLIST_FILE = evaKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.www.evaKool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.evaKool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -483,7 +489,7 @@
 				DEVELOPMENT_TEAM = KVC8NZTYE2;
 				INFOPLIST_FILE = evaKool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.www.evaKool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.evaKool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

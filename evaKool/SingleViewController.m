@@ -50,6 +50,11 @@
     [btOff addTarget:self action:@selector(SetOff) forControlEvents:UIControlEventTouchUpInside];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    self.header.delegate = self;
+}
+
+
 -(NSString *)currentWifiSSID{
     NSDictionary *info = nil;
     NSString *ssid = nil;

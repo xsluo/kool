@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,21 +18,21 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-ln-mNR">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="-4" y="44" width="383" height="734"/>
                             </imageView>
                             <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-Dq-FiI">
-                                <rect key="frame" x="124.33333333333333" y="681.66666666666663" width="165.33333333333337" height="50"/>
+                                <rect key="frame" x="111" y="753.66666666666663" width="153" height="51.666666666666629"/>
                                 <state key="normal" title="Button" image="enter.png"/>
                                 <connections>
                                     <action selector="Connectwifi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TiQ-Kb-0PC"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6rG-o6-gLC">
-                                <rect key="frame" x="103.66666666666669" y="94.000000000000014" width="207" height="143.33333333333337"/>
+                                <rect key="frame" x="91.666666666666671" y="109.33333333333333" width="191.66666666666663" height="146.66666666666669"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,11 +70,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ju7-pr-KGk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2w3-2C-gGl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-fZ-Au2">
-                                <rect key="frame" x="20" y="20" width="374" height="716"/>
+                                <rect key="frame" x="16" y="44" width="343" height="734"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,64 +99,67 @@
                         <viewControllerLayoutGuide type="bottom" id="FWL-dv-4up"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B6P-U5-aSS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background5.png" translatesAutoresizingMaskIntoConstraints="NO" id="PFg-O7-P4x">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="-4" y="44" width="383" height="734"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FRIDGE1.png" translatesAutoresizingMaskIntoConstraints="NO" id="CPP-lF-5Jj">
-                                <rect key="frame" x="72.333333333333343" y="259.33333333333331" width="269.33333333333326" height="121.66666666666669"/>
+                                <rect key="frame" x="63" y="290.66666666666669" width="249" height="125"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0℃" textAlignment="center" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NB6-1g-saS">
-                                <rect key="frame" x="183.66666666666666" y="406.33333333333331" width="47" height="34"/>
+                                <rect key="frame" x="164" y="450" width="47" height="34"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-10℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czm-tH-E5D">
-                                <rect key="frame" x="185.66666666666666" y="522.66666666666663" width="43" height="22"/>
+                                <rect key="frame" x="166" y="577.66666666666663" width="43" height="22"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;SSID&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B1-t4-Yrs">
-                                <rect key="frame" x="181" y="228.33333333333334" width="52" height="22"/>
+                                <rect key="frame" x="161.66666666666666" y="253" width="52" height="22"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bPE-vw-n1Q">
-                                <rect key="frame" x="103.66666666666669" y="56.000000000000007" width="207" height="114.66666666666669"/>
+                                <rect key="frame" x="91.666666666666671" y="64.666666666666686" width="191.66666666666663" height="117.33333333333331"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIe-78-3WH">
-                                <rect key="frame" x="290.66666666666669" y="181" width="103.33333333333331" height="43"/>
+                                <rect key="frame" x="263.33333333333331" y="201.33333333333334" width="95.666666666666686" height="44"/>
                                 <state key="normal" title="Button" image="SETTINGS.png"/>
+                                <connections>
+                                    <segue destination="WAa-Vb-PxN" kind="show" identifier="segueSingle" id="Ka9-Cb-Vc8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T97-08-H7k">
-                                <rect key="frame" x="90.666666666666686" y="453.66666666666669" width="67.333333333333314" height="49.333333333333314"/>
+                                <rect key="frame" x="81.333333333333329" y="505.00000000000006" width="62.333333333333329" height="45.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="T97-08-H7k" secondAttribute="height" multiplier="124:91" id="Gww-Nj-kzf"/>
                                 </constraints>
                                 <state key="normal" image="onup.png"/>
                             </button>
                             <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipg-5v-MNq">
-                                <rect key="frame" x="256" y="453.66666666666669" width="67.333333333333314" height="49.333333333333314"/>
+                                <rect key="frame" x="231.33333333333334" y="505.00000000000006" width="62.333333333333343" height="45.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ipg-5v-MNq" secondAttribute="height" multiplier="124:91" id="lgE-TP-GFl"/>
                                 </constraints>
                                 <state key="normal" image="ondown.png"/>
                             </button>
                             <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWj-wU-18m">
-                                <rect key="frame" x="29.999999999999993" y="585.66666666666663" width="126.33333333333331" height="43"/>
+                                <rect key="frame" x="19.666666666666671" y="648" width="129.33333333333331" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lWj-wU-18m" secondAttribute="height" multiplier="1055:359" id="LpO-zX-WQb"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="on.png"/>
                             </button>
                             <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVW-p0-w0b">
-                                <rect key="frame" x="258" y="585.66666666666663" width="125.66666666666669" height="43"/>
+                                <rect key="frame" x="226.33333333333337" y="648" width="128.66666666666663" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HVW-p0-w0b" secondAttribute="height" multiplier="1055:361" id="T6i-I2-2k5"/>
                                 </constraints>
@@ -207,42 +210,42 @@
             </objects>
             <point key="canvasLocation" x="-390" y="-725"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="MqV-hU-HO1">
             <objects>
-                <viewController id="WAa-Vb-PxN" sceneMemberID="viewController">
+                <viewController id="WAa-Vb-PxN" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eFq-p7-dOw"/>
                         <viewControllerLayoutGuide type="bottom" id="u8L-hv-2ON"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ief-VW-RaC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-OU-5DZ">
-                                <rect key="frame" x="-20" y="20" width="454" height="716"/>
+                                <rect key="frame" x="-20" y="44" width="415" height="734"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="apU-s6-ruW">
-                                <rect key="frame" x="93.666666666666686" y="75" width="227" height="107.66666666666669"/>
+                                <rect key="frame" x="83.666666666666671" y="87" width="207.66666666666663" height="110"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lo-lc-e3G">
-                                <rect key="frame" x="14.666666666666671" y="195.66666666666666" width="136.33333333333331" height="50.333333333333343"/>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lo-lc-e3G">
+                                <rect key="frame" x="12.666666666666664" y="218" width="124.66666666666669" height="51.333333333333314"/>
                                 <state key="normal" title="Button" image="back.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blF-18-glt">
-                                <rect key="frame" x="116.33333333333333" y="659" width="181.33333333333337" height="43"/>
+                                <rect key="frame" x="104.66666666666669" y="717.66666666666663" width="166" height="44"/>
                                 <state key="normal" title="Button" image="setting.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg5-0Z-UEp">
-                                <rect key="frame" x="263" y="361.33333333333331" width="136.33333333333337" height="50"/>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg5-0Z-UEp">
+                                <rect key="frame" x="237.66666666666666" y="400.66666666666669" width="124.66666666666666" height="51.333333333333314"/>
                                 <state key="normal" title="Button" image="celsius.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-6B-lsA">
-                                <rect key="frame" x="263" y="442.33333333333331" width="136.33333333333337" height="50"/>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-6B-lsA">
+                                <rect key="frame" x="237.66666666666666" y="493.99999999999994" width="124.66666666666666" height="51.333333333333314"/>
                                 <state key="normal" title="Button" image="eco.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drd-n2-f1W">
-                                <rect key="frame" x="263" y="269.33333333333331" width="136.33333333333337" height="50"/>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drd-n2-f1W">
+                                <rect key="frame" x="237.66666666666666" y="299" width="124.66666666666666" height="51.333333333333314"/>
                                 <state key="normal" title="Button" image="wifi.png"/>
                             </button>
                         </subviews>
@@ -265,7 +268,7 @@
                             <constraint firstItem="drd-n2-f1W" firstAttribute="width" secondItem="Fgf-OU-5DZ" secondAttribute="width" multiplier="0.3" id="Wkn-5d-C51"/>
                             <constraint firstItem="Fgf-OU-5DZ" firstAttribute="top" secondItem="eFq-p7-dOw" secondAttribute="bottom" id="Y2q-gg-evv"/>
                             <constraint firstItem="apU-s6-ruW" firstAttribute="centerY" secondItem="Ief-VW-RaC" secondAttribute="centerY" multiplier="0.35" id="a5H-uW-Pec"/>
-                            <constraint firstItem="w3Q-6B-lsA" firstAttribute="centerY" secondItem="Ief-VW-RaC" secondAttribute="centerY" multiplier="1.27" id="bAc-oB-PXx"/>
+                            <constraint firstItem="w3Q-6B-lsA" firstAttribute="centerY" secondItem="Ief-VW-RaC" secondAttribute="centerY" multiplier="1.28" id="bAc-oB-PXx"/>
                             <constraint firstItem="drd-n2-f1W" firstAttribute="height" secondItem="Fgf-OU-5DZ" secondAttribute="height" multiplier="0.07" id="bU5-jb-lbW"/>
                             <constraint firstItem="Rg5-0Z-UEp" firstAttribute="centerY" secondItem="Ief-VW-RaC" secondAttribute="centerY" multiplier="1.05" id="dsu-7x-unZ"/>
                             <constraint firstItem="8Lo-lc-e3G" firstAttribute="height" secondItem="Fgf-OU-5DZ" secondAttribute="height" multiplier="0.07" id="eZi-04-Nq8"/>
@@ -294,90 +297,93 @@
                         <viewControllerLayoutGuide type="bottom" id="ERL-de-PzG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6fP-dQ-SZD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background5.png" translatesAutoresizingMaskIntoConstraints="NO" id="WzJ-d0-oob">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="-4" y="44" width="383" height="734"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FRIDGE2.png" translatesAutoresizingMaskIntoConstraints="NO" id="1rf-ll-3fa">
-                                <rect key="frame" x="72.333333333333343" y="251.99999999999997" width="269.33333333333326" height="121.66666666666666"/>
+                                <rect key="frame" x="63" y="282.66666666666669" width="249" height="124.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0℃" textAlignment="center" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1q-6x-rVk">
-                                <rect key="frame" x="100.66666666666667" y="406.33333333333331" width="47.000000000000014" height="34"/>
+                                <rect key="frame" x="89" y="450" width="47" height="34"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0℃" textAlignment="center" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxw-Y9-uWi">
-                                <rect key="frame" x="266.33333333333331" y="405.66666666666669" width="47" height="35"/>
+                                <rect key="frame" x="239" y="449.33333333333331" width="47" height="35"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-10℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9c-Je-J3G">
-                                <rect key="frame" x="102.66666666666667" y="522.66666666666663" width="43.000000000000014" height="22"/>
+                                <rect key="frame" x="91" y="577.66666666666663" width="43" height="22"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="105" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-10℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mm-Nr-zWW">
-                                <rect key="frame" x="268.33333333333331" y="522.66666666666663" width="43" height="22"/>
+                                <rect key="frame" x="241" y="577.66666666666663" width="43" height="22"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;SSID&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJi-Rc-FQA">
-                                <rect key="frame" x="182.66666666666666" y="229" width="49" height="20.333333333333343"/>
+                                <rect key="frame" x="163" y="253.66666666666666" width="49" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="LMn-F8-bmh">
-                                <rect key="frame" x="103.66666666666669" y="56.000000000000007" width="207" height="114.66666666666669"/>
+                                <rect key="frame" x="91.666666666666671" y="64.666666666666686" width="191.66666666666663" height="117.33333333333331"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGv-PM-vu7">
-                                <rect key="frame" x="290.66666666666669" y="181" width="103.33333333333331" height="43"/>
+                                <rect key="frame" x="263.33333333333331" y="201.33333333333334" width="95.666666666666686" height="44"/>
                                 <state key="normal" title="Button" image="SETTINGS.png"/>
+                                <connections>
+                                    <segue destination="WAa-Vb-PxN" kind="show" identifier="segueDouble" id="3XJ-al-i3h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rk-hE-hLC">
-                                <rect key="frame" x="62.666666666666657" y="463.66666666666669" width="40.333333333333343" height="29.666666666666686"/>
+                                <rect key="frame" x="56.333333333333329" y="514" width="37.333333333333329" height="27.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="3Rk-hE-hLC" secondAttribute="height" multiplier="124:91" id="dDh-YG-4zH"/>
                                 </constraints>
                                 <state key="normal" image="onup.png"/>
                             </button>
                             <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-jq-NOZ">
-                                <rect key="frame" x="145.33333333333334" y="463.33333333333331" width="40.333333333333343" height="30"/>
+                                <rect key="frame" x="131.33333333333334" y="514" width="37.333333333333343" height="27.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FFo-jq-NOZ" secondAttribute="height" multiplier="124:92" id="fB6-Bq-lFP"/>
                                 </constraints>
                                 <state key="normal" image="ondown.png"/>
                             </button>
                             <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2x-SR-c0Z">
-                                <rect key="frame" x="228.33333333333334" y="463.66666666666669" width="40.333333333333343" height="29.666666666666686"/>
+                                <rect key="frame" x="206.33333333333334" y="514" width="37.333333333333343" height="27.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="t2x-SR-c0Z" secondAttribute="height" multiplier="124:91" id="Zp1-IQ-KfA"/>
                                 </constraints>
                                 <state key="normal" image="onup.png"/>
                             </button>
                             <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-2m-U5H">
-                                <rect key="frame" x="311" y="463.66666666666669" width="40.333333333333314" height="29.666666666666686"/>
+                                <rect key="frame" x="281.33333333333331" y="514" width="37.333333333333314" height="27.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Efx-2m-U5H" secondAttribute="height" multiplier="124:91" id="JRe-I5-not"/>
                                 </constraints>
                                 <state key="normal" image="ondown.png"/>
                             </button>
                             <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOA-F0-cDa">
-                                <rect key="frame" x="237.33333333333334" y="585.66666666666663" width="125.66666666666666" height="43"/>
+                                <rect key="frame" x="207.66666666666669" y="648" width="128.66666666666669" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nOA-F0-cDa" secondAttribute="height" multiplier="1055:361" id="Hcw-Uj-ZKf"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="off.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-on-27e">
-                                <rect key="frame" x="51.000000000000007" y="585.66666666666663" width="125.66666666666669" height="43"/>
+                            <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-on-27e">
+                                <rect key="frame" x="38.666666666666671" y="648" width="128.66666666666663" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2lX-on-27e" secondAttribute="height" multiplier="1055:361" id="28r-Br-bRb"/>
                                 </constraints>
@@ -466,4 +472,7 @@
         <image name="setting.png" width="1278" height="354"/>
         <image name="wifi.png" width="770" height="357"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3XJ-al-i3h"/>
+    </inferredMetricsTieBreakers>
 </document>

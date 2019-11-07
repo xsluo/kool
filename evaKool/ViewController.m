@@ -52,7 +52,7 @@
     [SVProgressHUD dismiss];
     UIAlertController*alert = [UIAlertController
                                alertControllerWithTitle: NSLocalizedString(@"Alert", nil)
-                               message: NSLocalizedString(@"Alertmsg", nil)
+                               message: NSLocalizedString(@"请选择wifi", nil)
                                preferredStyle:UIAlertControllerStyleAlert];
     
     [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Yes", nil)  style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
