@@ -52,11 +52,11 @@
     [SVProgressHUD dismiss];
     UIAlertController*alert = [UIAlertController
                                alertControllerWithTitle: NSLocalizedString(@"Alert", nil)
-                               message: NSLocalizedString(@"请选择wifi", nil)
+                               message: NSLocalizedString(@"Please connect WiFi in the settings", nil)
                                preferredStyle:UIAlertControllerStyleAlert];
     
     [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Yes", nil)  style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
-        NSURL *url = [NSURL URLWithString:@"App-Prefs:root=WIFI"];
+        NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
         } else {

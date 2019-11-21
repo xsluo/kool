@@ -12,8 +12,8 @@
 
 @interface SettingViewController ()<SocketDelegate>
 @property (strong,nonatomic) Socket *header;
-@property Byte unit;
-@property Byte mode;
+@property  Byte unit;
+@property  Byte mode;
 @end
 
 @implementation SettingViewController
@@ -27,6 +27,7 @@
     
     [self.header socketConnectHost];
     [self.header initData];
+    
     
     // Do any additional setup after loading the view.
     UIButton *btBack = (UIButton *)[self.view viewWithTag:101];
@@ -74,10 +75,15 @@
 }
 
 -(void) SetUnit{
+    UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
+    UIImage *imageCelsius = [UIImage imageNamed:@"celsius.png"];
+    UIImage *imageFahrenheit = [UIImage imageNamed:@"fahrenheit.png"];
     if(self.unit==0x01){
         self.unit = 0x00;
+        [btUnit setImage:imageCelsius forState:UIControlStateNormal];
     }else if(self.unit == 0x00){
         self.unit = 0x01;
+        [btUnit setImage:imageFahrenheit forState:UIControlStateNormal];
     }
     self.header.dataWrite.data = self.unit;
     self.header.dataWrite.command = 0x07;
@@ -88,11 +94,11 @@
     [SVProgressHUD dismiss];
     UIAlertController*alert = [UIAlertController
                                alertControllerWithTitle: NSLocalizedString(@"Alert", nil)
-                               message: NSLocalizedString(@"请选择wifi", nil)
+                               message: NSLocalizedString(@"Please connect WiFi in the settings", nil)
                                preferredStyle:UIAlertControllerStyleAlert];
     
     [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Yes", nil)  style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
-        NSURL *url = [NSURL URLWithString:@"App-Prefs:root=WIFI"];
+        NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
         } else {
@@ -105,15 +111,19 @@
 
 
 -(void)SetMode{
+    UIButton *btMode = (UIButton *)[self.view viewWithTag:104];
+    UIImage *imageEco = [UIImage imageNamed:@"eco.png"];
+    UIImage *imageTurbo = [UIImage imageNamed:@"turbo.png"];
     if(self.mode==0x01){
         self.mode = 0x00;
+        [btMode setImage:imageEco forState:UIControlStateNormal];
     }else if(self.mode == 0x00){
         self.mode = 0x01;
+        [btMode setImage:imageTurbo forState:UIControlStateNormal];
     }
     self.header.dataWrite.data = self.mode;
 
     self.header.dataWrite.command = 0x08;
     [self.header writeBoard];
 }
-
 @end

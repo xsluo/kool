@@ -39,6 +39,9 @@
 		9A549DD822E8564B00EABCB5 /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD322E8564B00EABCB5 /* wifi.png */; };
 		9A549DDA22E856E100EABCB5 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A549DD922E856E100EABCB5 /* background.png */; };
 		9A6D056322E93C3400E748F7 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D056222E93C3400E748F7 /* background1.png */; };
+		CE90CB1E23869CD4001858D5 /* NewLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE90CB1D23869CD3001858D5 /* NewLogo.png */; };
+		CE90CB2023869E56001858D5 /* fahrenheit.png in Resources */ = {isa = PBXBuildFile; fileRef = CE90CB1F23869E4A001858D5 /* fahrenheit.png */; };
+		CE90CB2223869EC9001858D5 /* turbo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE90CB2123869EC9001858D5 /* turbo.png */; };
 		CECCC3212372522700741C10 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCC3202372522700741C10 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +90,9 @@
 		9A549DD922E856E100EABCB5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		9A6D056222E93C3400E748F7 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
 		A04D24F9D676C046CD120D08 /* libPods-evaKool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-evaKool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE90CB1D23869CD3001858D5 /* NewLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewLogo.png; sourceTree = "<group>"; };
+		CE90CB1F23869E4A001858D5 /* fahrenheit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fahrenheit.png; sourceTree = "<group>"; };
+		CE90CB2123869EC9001858D5 /* turbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turbo.png; sourceTree = "<group>"; };
 		CECCC31F2372522700741C10 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		CECCC3202372522700741C10 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +194,9 @@
 		9A549DC022E855F600EABCB5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CE90CB2123869EC9001858D5 /* turbo.png */,
+				CE90CB1F23869E4A001858D5 /* fahrenheit.png */,
+				CE90CB1D23869CD3001858D5 /* NewLogo.png */,
 				45BDF7E0230B85820081E7C5 /* ondown.png */,
 				45BDF7E1230B85820081E7C5 /* onup.png */,
 				9A195B6522EAFDE700209E81 /* background5.png */,
@@ -294,6 +303,9 @@
 				9A549DC922E8562A00EABCB5 /* celsius.png in Resources */,
 				9A549DCB22E8562A00EABCB5 /* enter.jpg in Resources */,
 				9A195B6622EAFDE700209E81 /* background5.png in Resources */,
+				CE90CB1E23869CD4001858D5 /* NewLogo.png in Resources */,
+				CE90CB2023869E56001858D5 /* fahrenheit.png in Resources */,
+				CE90CB2223869EC9001858D5 /* turbo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
