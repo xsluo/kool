@@ -10,10 +10,13 @@
 #import "SVProgressHUD.h"
 #import "SettingViewController.h"
 
+Byte unit;
+Byte mode;
+
 @interface SettingViewController ()<SocketDelegate>
 @property (strong,nonatomic) Socket *header;
-@property  Byte unit;
-@property  Byte mode;
+//@property  Byte unit;
+//@property  Byte mode;
 @end
 
 @implementation SettingViewController
@@ -54,9 +57,9 @@
  }
  */
 -(void)OnDidReadData{
-    self.unit = self.header.dataRead.unit;
-    self.mode = self.header.dataRead.mode;
-    NSLog(@"unit is ---%i",self.unit);
+    //unit = self.header.dataRead.unit;
+    //mode = self.header.dataRead.mode;
+    NSLog(@"unit is ---%i",unit);
 }
 
 -(void)onConnectFailed{
@@ -78,14 +81,14 @@
     UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
     UIImage *imageCelsius = [UIImage imageNamed:@"celsius.png"];
     UIImage *imageFahrenheit = [UIImage imageNamed:@"fahrenheit.png"];
-    if(self.unit==0x01){
-        self.unit = 0x00;
+    if(unit==0x01){
+        unit = 0x00;
         [btUnit setImage:imageCelsius forState:UIControlStateNormal];
-    }else if(self.unit == 0x00){
-        self.unit = 0x01;
+    }else if(unit == 0x00){
+        unit = 0x01;
         [btUnit setImage:imageFahrenheit forState:UIControlStateNormal];
     }
-    self.header.dataWrite.data = self.unit;
+    self.header.dataWrite.data = unit;
     self.header.dataWrite.command = 0x07;
     [self.header writeBoard];
 }
@@ -111,17 +114,18 @@
 
 
 -(void)SetMode{
+    
     UIButton *btMode = (UIButton *)[self.view viewWithTag:104];
     UIImage *imageEco = [UIImage imageNamed:@"eco.png"];
     UIImage *imageTurbo = [UIImage imageNamed:@"turbo.png"];
-    if(self.mode==0x01){
-        self.mode = 0x00;
+    if(mode==0x01){
+        mode = 0x00;
         [btMode setImage:imageEco forState:UIControlStateNormal];
-    }else if(self.mode == 0x00){
-        self.mode = 0x01;
+    }else if(mode == 0x00){
+        mode = 0x01;
         [btMode setImage:imageTurbo forState:UIControlStateNormal];
     }
-    self.header.dataWrite.data = self.mode;
+    self.header.dataWrite.data = mode;
 
     self.header.dataWrite.command = 0x08;
     [self.header writeBoard];
