@@ -1,0 +1,4 @@
+target 'evaKool' do
+pod 'CocoaAsyncSocket'
+pod 'SVProgressHUD','~>0.8.1' 
+end
