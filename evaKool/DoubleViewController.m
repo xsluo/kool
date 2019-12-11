@@ -31,7 +31,7 @@
     
     [self.header socketConnectHost];
     [self.header initData];
-
+    
     //获取ssid
     UILabel *lbSSID = (UILabel *)[self.view viewWithTag:101];
     NSString *wifiSSID = [self currentWifiSSID];
@@ -58,7 +58,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-      self.header.delegate = self;
+    self.header.delegate = self;
 }
 
 
@@ -109,10 +109,58 @@
         tempR -=256;
     }
     lbTempRealRight.text = [NSString stringWithFormat:@"%hi℃",tempR];
+    
+    UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
+    UIButton *btAddLeft = (UIButton *)[self.view viewWithTag:106];
+    UIButton *btDecLeft = (UIButton *)[self.view viewWithTag:107];
+    UIButton *btAddRight = (UIButton *)[self.view viewWithTag:108];
+    UIButton *btDecRight = (UIButton *)[self.view viewWithTag:109];
+    
+    
+    UIButton *btOn = (UIButton *)[self.view viewWithTag:110];
+    UIButton *btOff = (UIButton *)[self.view viewWithTag:111];
+    
+    
+    Byte onOff = self.header.dataRead.power;
+    if(onOff == 0x00){
+        btAddLeft.enabled = NO;
+        btDecLeft.enabled = NO;
+        btAddRight.enabled = NO;
+        btDecRight.enabled = NO;
+        btOn.enabled = YES;
+        btOff.enabled = NO;
+        
+        //btAdd.imageView.image = [UIImage imageNamed:@"onupOff.png"];
+        [btAddLeft setImage:[UIImage imageNamed:@"onupOff.png"] forState:UIControlStateDisabled];
+        [btDecLeft setImage:[UIImage imageNamed:@"ondownOff.png"] forState:UIControlStateDisabled];
+        [btAddRight setImage:[UIImage imageNamed:@"onupOff.png"] forState:UIControlStateDisabled];
+        [btDecRight setImage:[UIImage imageNamed:@"ondownOff.png"] forState:UIControlStateDisabled];
+        
+        [btOn setImage:[UIImage imageNamed:@"on.png"] forState:UIControlStateNormal];
+        [btOff setImage:[UIImage imageNamed:@"offOff.png"] forState:UIControlStateDisabled];
+        imageFridge.image = [UIImage imageNamed:@"FRIDGE2Off.png"];
+    }else{
+        btAddLeft.enabled = YES;
+        btDecLeft.enabled = YES;
+        btAddRight.enabled = YES;
+        btDecRight.enabled = YES;
+        btOn.enabled = NO;
+        btOff.enabled = YES;
+        
+        //btAdd.imageView.image = [UIImage imageNamed:@"onupOff.png"];
+        [btAddLeft setImage:[UIImage imageNamed:@"onup.png"] forState:UIControlStateDisabled];
+        [btDecLeft setImage:[UIImage imageNamed:@"ondown.png"] forState:UIControlStateDisabled];
+        [btAddRight setImage:[UIImage imageNamed:@"onup.png"] forState:UIControlStateDisabled];
+        [btDecRight setImage:[UIImage imageNamed:@"ondown.png"] forState:UIControlStateDisabled];
+        
+        [btOn setImage:[UIImage imageNamed:@"onOff.png"] forState:UIControlStateNormal];
+        [btOff setImage:[UIImage imageNamed:@"off.png"] forState:UIControlStateDisabled];
+        imageFridge.image = [UIImage imageNamed:@"FRIDGE2.png"];
+    }
 }
 
 -(void)onConnectBreak{
-      NSLog(@"connect break!");
+    NSLog(@"connect break!");
 }
 
 
@@ -179,23 +227,78 @@
 -(void) SetOn{
     self.header.dataWrite.data = 0x01;
     self.header.dataWrite.command = 0x02;
+    
+    UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
+    UIButton *btAddLeft = (UIButton *)[self.view viewWithTag:106];
+    UIButton *btDecLeft = (UIButton *)[self.view viewWithTag:107];
+    UIButton *btAddRight = (UIButton *)[self.view viewWithTag:108];
+    UIButton *btDecRight = (UIButton *)[self.view viewWithTag:109];
+    
+    
+    UIButton *btOn = (UIButton *)[self.view viewWithTag:110];
+    UIButton *btOff = (UIButton *)[self.view viewWithTag:111];
+    
+    btAddLeft.enabled = YES;
+    btDecLeft.enabled = YES;
+    btAddRight.enabled = YES;
+    btDecRight.enabled = YES;
+    btOn.enabled = NO;
+    btOff.enabled = YES;
+    
+    //btAdd.imageView.image = [UIImage imageNamed:@"onupOff.png"];
+    [btAddLeft setImage:[UIImage imageNamed:@"onup.png"] forState:UIControlStateDisabled];
+    [btDecLeft setImage:[UIImage imageNamed:@"ondown.png"] forState:UIControlStateDisabled];
+    [btAddRight setImage:[UIImage imageNamed:@"onup.png"] forState:UIControlStateDisabled];
+    [btDecRight setImage:[UIImage imageNamed:@"ondown.png"] forState:UIControlStateDisabled];
+    
+    [btOn setImage:[UIImage imageNamed:@"onOff.png"] forState:UIControlStateNormal];
+    [btOff setImage:[UIImage imageNamed:@"off.png"] forState:UIControlStateDisabled];
+    imageFridge.image = [UIImage imageNamed:@"FRIDGE2.png"];
+    
     [self.header writeBoard];
 }
 
 -(void)SetOff{
     self.header.dataWrite.data = 0x00;
     self.header.dataWrite.command = 0x02;
+    UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
+    UIButton *btAddLeft = (UIButton *)[self.view viewWithTag:106];
+    UIButton *btDecLeft = (UIButton *)[self.view viewWithTag:107];
+    UIButton *btAddRight = (UIButton *)[self.view viewWithTag:108];
+    UIButton *btDecRight = (UIButton *)[self.view viewWithTag:109];
+    
+    
+    UIButton *btOn = (UIButton *)[self.view viewWithTag:110];
+    UIButton *btOff = (UIButton *)[self.view viewWithTag:111];
+    
+    btAddLeft.enabled = NO;
+    btDecLeft.enabled = NO;
+    btAddRight.enabled = NO;
+    btDecRight.enabled = NO;
+    btOn.enabled = YES;
+    btOff.enabled = NO;
+    
+    //btAdd.imageView.image = [UIImage imageNamed:@"onupOff.png"];
+    [btAddLeft setImage:[UIImage imageNamed:@"onupOff.png"] forState:UIControlStateDisabled];
+    [btDecLeft setImage:[UIImage imageNamed:@"ondownOff.png"] forState:UIControlStateDisabled];
+    [btAddRight setImage:[UIImage imageNamed:@"onupOff.png"] forState:UIControlStateDisabled];
+    [btDecRight setImage:[UIImage imageNamed:@"ondownOff.png"] forState:UIControlStateDisabled];
+    
+    [btOn setImage:[UIImage imageNamed:@"on.png"] forState:UIControlStateNormal];
+    [btOff setImage:[UIImage imageNamed:@"offOff.png"] forState:UIControlStateDisabled];
+    imageFridge.image = [UIImage imageNamed:@"FRIDGE2Off.png"];
+    
     [self.header writeBoard];
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
