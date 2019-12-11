@@ -60,6 +60,40 @@ Byte mode;
     //unit = self.header.dataRead.unit;
     //mode = self.header.dataRead.mode;
     NSLog(@"unit is ---%i",unit);
+    Byte onOff = self.header.dataRead.power;
+    Byte unitNow = unit;
+    Byte modeNow = mode;
+    
+    UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
+    UIButton *btMode = (UIButton *)[self.view viewWithTag:104];
+    
+    if(onOff == 0x00){
+        [btUnit setEnabled:NO];
+        [btMode setEnabled:NO];
+        if(unitNow == 0x00){
+            [btUnit setImage:[UIImage imageNamed:@"celsiusOff.png"] forState:UIControlStateDisabled];
+        }else{
+            [btUnit setImage:[UIImage imageNamed:@"fahrenheitOff.png"] forState:UIControlStateDisabled];
+        }
+        if(modeNow == 0x00){
+            [btMode setImage:[UIImage imageNamed:@"ecoOff.png"] forState:UIControlStateDisabled];
+        }else{
+            [btMode setImage:[UIImage imageNamed:@"fahrenheitOff.png"] forState:UIControlStateDisabled];
+        }
+    }else{
+        [btUnit setEnabled:YES];
+        [btMode setEnabled:YES];
+        if(unitNow == 0x00){
+            [btUnit setImage:[UIImage imageNamed:@"celsius.png" ] forState:UIControlStateNormal];
+        }else{
+            [btUnit setImage:[UIImage imageNamed:@"fahrenheit.png"] forState:UIControlStateNormal];
+        }
+        if(modeNow == 0x00){
+            [btMode setImage:[UIImage imageNamed:@"eco.png"] forState:UIControlStateNormal];
+        }else{
+            [btMode setImage:[UIImage imageNamed:@"turbo.png"] forState:UIControlStateNormal];
+        }
+    }
 }
 
 -(void)onConnectFailed{
@@ -79,18 +113,22 @@ Byte mode;
 
 -(void) SetUnit{
     UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
-    UIImage *imageCelsius = [UIImage imageNamed:@"celsius.png"];
-    UIImage *imageFahrenheit = [UIImage imageNamed:@"fahrenheit.png"];
-    if(unit==0x01){
-        unit = 0x00;
-        [btUnit setImage:imageCelsius forState:UIControlStateNormal];
-    }else if(unit == 0x00){
+    Byte unitNow = unit;
+    
+    //Byte modeNow = self.header.dataRead.mode;
+    
+    if(unitNow == 0x00){
+        [btUnit setImage:[UIImage imageNamed:@"celsius.png"] forState:UIControlStateNormal];
         unit = 0x01;
-        [btUnit setImage:imageFahrenheit forState:UIControlStateNormal];
+    }else{
+        [btUnit setImage:[UIImage imageNamed:@"fahrenheit.png"] forState:UIControlStateNormal];
+        unit = 0x00;
     }
+    
     self.header.dataWrite.data = unit;
     self.header.dataWrite.command = 0x07;
     [self.header writeBoard];
+    
 }
 
 -(void) SetWifi{

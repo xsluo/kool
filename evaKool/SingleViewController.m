@@ -98,6 +98,48 @@
         temp -=256;
     }
     lbTempReal.text = [NSString stringWithFormat:@"%hi℃",temp];
+    
+    Byte onOff = self.header.dataRead.power;
+    if(onOff == 0x00){
+        UIButton *btAdd = (UIButton *)[self.view viewWithTag:108];
+        UIButton *btDec = (UIButton *)[self.view viewWithTag:109];
+        UIButton *btOn = (UIButton *)[self.view viewWithTag:104];
+        UIButton *btOff = (UIButton *)[self.view viewWithTag:105];
+        UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
+        
+        
+        btAdd.enabled = NO;
+        btDec.enabled = NO;
+        btOn.enabled = YES;
+        btOff.enabled = NO;
+        
+        
+        //btAdd.imageView.image = [UIImage imageNamed:@"onupOff.png"];
+        [btAdd setImage:[UIImage imageNamed:@"onupOff.png"] forState:UIControlStateDisabled];
+        [btDec setImage:[UIImage imageNamed:@"ondownOff.png"] forState:UIControlStateDisabled];
+        [btOn setImage:[UIImage imageNamed:@"on.png"] forState:UIControlStateNormal];
+        [btOff setImage:[UIImage imageNamed:@"offOff.png"] forState:UIControlStateDisabled];
+        imageFridge.image = [UIImage imageNamed:@"FRIDGE1Off.png"];
+    }else{
+        UIButton *btAdd = (UIButton *)[self.view viewWithTag:108];
+        UIButton *btDec = (UIButton *)[self.view viewWithTag:109];
+        UIButton *btOn = (UIButton *)[self.view viewWithTag:104];
+        UIButton *btOff = (UIButton *)[self.view viewWithTag:105];
+        UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
+        
+        btAdd.enabled = YES;
+        btDec.enabled = YES;
+        btOn.enabled = NO;
+        btOff.enabled = YES;
+        
+        [btAdd setImage:[UIImage imageNamed:@"onup.png"] forState:UIControlStateNormal];
+        [btDec setImage:[UIImage imageNamed:@"ondown.png"] forState:UIControlStateNormal];
+        [btOn setImage:[UIImage imageNamed:@"onOff.png"] forState:UIControlStateDisabled];
+        [btOff setImage:[UIImage imageNamed:@"off.png"] forState:UIControlStateNormal];
+        imageFridge.image = [UIImage imageNamed:@"FRIDGE1.png"];
+    }
+    
+    
 }
 
 -(void)onConnectBreak{
@@ -141,6 +183,25 @@
 -(void) SetOn{
     self.header.dataWrite.data = 0x01;
     self.header.dataWrite.command = 0x02;
+    
+    UIButton *btAdd = (UIButton *)[self.view viewWithTag:108];
+    UIButton *btDec = (UIButton *)[self.view viewWithTag:109];
+    UIButton *btOn = (UIButton *)[self.view viewWithTag:104];
+    UIButton *btOff = (UIButton *)[self.view viewWithTag:105];
+    UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
+    
+    btAdd.enabled = YES;
+    btDec.enabled = YES;
+    btOn.enabled = NO;
+    btOff.enabled = YES;
+    
+    [btAdd setImage:[UIImage imageNamed:@"onup.png"] forState:UIControlStateNormal];
+    [btDec setImage:[UIImage imageNamed:@"ondown.png"] forState:UIControlStateNormal];
+    [btOn setImage:[UIImage imageNamed:@"onOff.png"] forState:UIControlStateDisabled];
+    [btOff setImage:[UIImage imageNamed:@"off.png"] forState:UIControlStateNormal];
+    imageFridge.image = [UIImage imageNamed:@"FRIDGE1.png"];
+    
+    
     [self.header writeBoard];
 }
 
@@ -148,6 +209,27 @@
     self.header.dataWrite.data = 0x00;
     self.header.dataWrite.command = 0x02;
     [self.header writeBoard];
+    
+    UIButton *btAdd = (UIButton *)[self.view viewWithTag:108];
+    UIButton *btDec = (UIButton *)[self.view viewWithTag:109];
+    UIButton *btOn = (UIButton *)[self.view viewWithTag:104];
+    UIButton *btOff = (UIButton *)[self.view viewWithTag:105];
+    UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
+    
+    
+    btAdd.enabled = NO;
+    btDec.enabled = NO;
+    btOn.enabled = YES;
+    btOff.enabled = NO;
+    
+    
+    //btAdd.imageView.image = [UIImage imageNamed:@"onupOff.png"];
+    [btAdd setImage:[UIImage imageNamed:@"onupOff.png"] forState:UIControlStateDisabled];
+    [btDec setImage:[UIImage imageNamed:@"ondownOff.png"] forState:UIControlStateDisabled];
+    [btOn setImage:[UIImage imageNamed:@"on.png"] forState:UIControlStateNormal];
+    [btOff setImage:[UIImage imageNamed:@"offOff.png"] forState:UIControlStateDisabled];
+    imageFridge.image = [UIImage imageNamed:@"FRIDGE1Off.png"];
+    
 }
     
 /*
