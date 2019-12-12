@@ -179,14 +179,12 @@
             self.dataRead.tempLeftHeating = value[6];
             self.dataRead.err = value[7];
             self.dataRead.type = value[8];
-            self.dataRead.mode = value[9];
+            self.dataRead.pattern = value[9];
             self.dataRead.unit = value[10];
-            self.dataRead.pattern= value[11];
+            self.dataRead.mode= value[11];
             self.dataRead.crcH = value[12];
             self.dataRead.crcL = value[13];
             self.dataRead.end = value[14];
-            
-            //[self disConnected];
             [self.delegate OnDidReadData];
         }
         else{

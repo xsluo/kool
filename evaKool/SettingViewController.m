@@ -10,12 +10,12 @@
 #import "SVProgressHUD.h"
 #import "SettingViewController.h"
 
-Byte unit;
-Byte mode;
+//Byte unit;
+//Byte mode;
 
 @interface SettingViewController ()<SocketDelegate>
 @property (strong,nonatomic) Socket *header;
-//@property  Byte unit;
+@property  Byte unit;
 //@property  Byte mode;
 @end
 
@@ -26,11 +26,13 @@ Byte mode;
     
     self.header = [Socket sharedInstance];
     self.header.delegate = self;
-    [self.header initDevice];
+   // [self.header initDevice];
     
+    //unit = self.header.dataRead.unit;
+    //mode = self.header.dataRead.mode;
+
     [self.header socketConnectHost];
     [self.header initData];
-    
     
     // Do any additional setup after loading the view.
     UIButton *btBack = (UIButton *)[self.view viewWithTag:101];
@@ -44,25 +46,18 @@ Byte mode;
     
     UIButton *btMode = (UIButton *)[self.view viewWithTag:104];
     [btMode addTarget:self action:@selector(SetMode) forControlEvents:UIControlEventTouchUpInside];
-    
+
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+
 -(void)OnDidReadData{
     //unit = self.header.dataRead.unit;
     //mode = self.header.dataRead.mode;
-    NSLog(@"unit is ---%i",unit);
+    //NSLog(@"unit is ---%i",unit);
     Byte onOff = self.header.dataRead.power;
-    Byte unitNow = unit;
-    Byte modeNow = mode;
+    //Byte unitNow = self.header.dataRead.unit;
+    Byte unitNow = self.unit;
+    Byte modeNow = self.header.dataRead.mode;
     
     UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
     UIButton *btMode = (UIButton *)[self.view viewWithTag:104];
@@ -78,7 +73,7 @@ Byte mode;
         if(modeNow == 0x00){
             [btMode setImage:[UIImage imageNamed:@"ecoOff.png"] forState:UIControlStateDisabled];
         }else{
-            [btMode setImage:[UIImage imageNamed:@"fahrenheitOff.png"] forState:UIControlStateDisabled];
+            [btMode setImage:[UIImage imageNamed:@"turboOff.png"] forState:UIControlStateDisabled];
         }
     }else{
         [btUnit setEnabled:YES];
@@ -113,22 +108,36 @@ Byte mode;
 
 -(void) SetUnit{
     UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
-    Byte unitNow = unit;
+    Byte unitNow = self.header.dataRead.unit;
+
     
-    //Byte modeNow = self.header.dataRead.mode;
-    
-    if(unitNow == 0x00){
+    if(unitNow == 0x01){
+        unitNow = 0x00;
         [btUnit setImage:[UIImage imageNamed:@"celsius.png"] forState:UIControlStateNormal];
-        unit = 0x01;
-    }else{
+    }else if(unitNow ==0x00){
+        unitNow = 0x01;
         [btUnit setImage:[UIImage imageNamed:@"fahrenheit.png"] forState:UIControlStateNormal];
-        unit = 0x00;
     }
-    
-    self.header.dataWrite.data = unit;
+    self.header.dataWrite.data = unitNow;
     self.header.dataWrite.command = 0x07;
     [self.header writeBoard];
     
+}
+
+-(void)SetMode{
+    UIButton *btMode = (UIButton *)[self.view viewWithTag:104];
+    Byte modeNow = self.header.dataRead.mode;
+    
+    if(modeNow==0x01){
+        modeNow = 0x00;
+        [btMode setImage:[UIImage imageNamed:@"eco.png"] forState:UIControlStateNormal];
+    }else if(modeNow == 0x00){
+        modeNow = 0x01;
+        [btMode setImage:[UIImage imageNamed:@"turbo.png"] forState:UIControlStateNormal];
+    }
+    self.header.dataWrite.data = modeNow;
+    self.header.dataWrite.command = 0x08;
+    [self.header writeBoard];
 }
 
 -(void) SetWifi{
@@ -151,21 +160,4 @@ Byte mode;
 }
 
 
--(void)SetMode{
-    
-    UIButton *btMode = (UIButton *)[self.view viewWithTag:104];
-    UIImage *imageEco = [UIImage imageNamed:@"eco.png"];
-    UIImage *imageTurbo = [UIImage imageNamed:@"turbo.png"];
-    if(mode==0x01){
-        mode = 0x00;
-        [btMode setImage:imageEco forState:UIControlStateNormal];
-    }else if(mode == 0x00){
-        mode = 0x01;
-        [btMode setImage:imageTurbo forState:UIControlStateNormal];
-    }
-    self.header.dataWrite.data = mode;
-
-    self.header.dataWrite.command = 0x08;
-    [self.header writeBoard];
-}
 @end

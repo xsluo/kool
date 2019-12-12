@@ -232,7 +232,7 @@
                                 <rect key="frame" x="12.666666666666664" y="218" width="124.66666666666669" height="51.333333333333314"/>
                                 <state key="normal" title="Button" image="back.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blF-18-glt">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blF-18-glt">
                                 <rect key="frame" x="104.66666666666669" y="717.66666666666663" width="166" height="44"/>
                                 <state key="normal" title="Button" image="setting.png"/>
                             </button>
