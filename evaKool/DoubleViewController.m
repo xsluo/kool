@@ -108,8 +108,9 @@
     if(tempR>100){
         tempR -=256;
     }
+ 
     lbTempRealRight.text = [NSString stringWithFormat:@"%hi℃",tempR];
-    
+
     UIImageView *imageFridge = (UIImageView *)[self.view viewWithTag:100];
     UIButton *btAddLeft = (UIButton *)[self.view viewWithTag:106];
     UIButton *btDecLeft = (UIButton *)[self.view viewWithTag:107];
