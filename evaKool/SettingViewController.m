@@ -55,8 +55,7 @@
     //mode = self.header.dataRead.mode;
     //NSLog(@"unit is ---%i",unit);
     Byte onOff = self.header.dataRead.power;
-    //Byte unitNow = self.header.dataRead.unit;
-    Byte unitNow = self.unit;
+    Byte unitNow = self.header.dataRead.unit;
     Byte modeNow = self.header.dataRead.mode;
     
     UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
@@ -110,13 +109,13 @@
     UIButton *btUnit = (UIButton *)[self.view viewWithTag:103];
     Byte unitNow = self.header.dataRead.unit;
 
-    
+    //此处似乎有逻辑错误
     if(unitNow == 0x01){
-        unitNow = 0x00;
-        [btUnit setImage:[UIImage imageNamed:@"celsius.png"] forState:UIControlStateNormal];
-    }else if(unitNow ==0x00){
         unitNow = 0x01;
-        [btUnit setImage:[UIImage imageNamed:@"fahrenheit.png"] forState:UIControlStateNormal];
+        //[btUnit setImage:[UIImage imageNamed:@"celsius.png"] forState:UIControlStateNormal];
+    }else if(unitNow ==0x00){
+        unitNow = 0x00;
+        //[btUnit setImage:[UIImage imageNamed:@"fahrenheit.png"] forState:UIControlStateNormal];
     }
     self.header.dataWrite.data = unitNow;
     self.header.dataWrite.command = 0x07;
